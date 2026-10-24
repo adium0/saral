@@ -1,0 +1,120 @@
+{
+ "simplified": {
+  "1yfb2py": "An operating system (OS) is system software. It manages a computer's hardware and software. It gives programs common services. It sits between the apps you run and the hardware they run on.",
+  "vejstb": "Time-sharing operating systems plan tasks so the system is used well. Some also track how much processor time, storage and other resources each user takes. This design began in the 1960s. Computers were expensive then and many users shared them.",
+  "sl3qr1": "The kernel is the core of an operating system. It is the first program loaded after the bootloader. It stays in memory the whole time. All programs reach the processor, memory and devices through it.",
+  "bykcu5": "In a monolithic kernel, like the one in Linux, the main services run together in one protected space. These include the scheduler, memory manager, file systems and device drivers. A microkernel moves most services into separate user-space programs. These programs talk by sending messages.",
+  "wgj3sz": "Apps ask the kernel for services using system calls. A system call switches the processor from user mode to kernel mode. Then special (privileged) instructions can run safely. Afterwards, control goes back to the app.",
+  "1imwytd": "A process is a program that is running. It includes the code, the program counter and registers, a stack, a heap and its resources. Each process is described by a record called the process control block.",
+  "47lg1s": "Multitasking works by context switching. The OS saves the state of the running process. Then it loads the saved state of another. This makes many processes seem to run at once on one processor core.",
+  "h8qttx": "Processes sometimes share data. A race condition happens when the result depends on the order their steps run in. To stop this, operating systems offer tools for taking turns. These include the semaphore, introduced by Edsger Dijkstra in 1965, and the mutex.",
+  "3odg60": "A deadlock is when each process in a group waits for something another one holds. Nobody can move. It happens only when four conditions are all true: mutual exclusion, hold and wait, no preemption, and circular wait.",
+  "6p7o3h": "Virtual memory gives each process the feeling of one large, unbroken memory space. Page tables map virtual addresses to real physical addresses. This lets the system use disk storage as extra main memory.",
+  "perewa": "Sometimes a process needs a page that is not in physical memory. The hardware then raises a page fault. The OS loads the page from disk. It may remove another page, for example the least recently used one.",
+  "llx9cm": "A file system stores data as named files inside folders (directories). It records details such as size, owner and permissions. It uses structures like inodes or allocation tables to find each file's blocks."
+ },
+ "summaries": {
+  "1ilulmo": [
+   "An operating system manages hardware and software for programs.",
+   "It sits between apps and the hardware.",
+   "Time-sharing systems began in the 1960s when computers were shared."
+  ],
+  "1ci517z": [
+   "The kernel is the core of the OS and stays in memory.",
+   "Linux uses a monolithic kernel with services in one space.",
+   "Microkernels move services into separate programs that pass messages.",
+   "Apps use system calls to switch from user mode to kernel mode."
+  ],
+  "gc6b5x": [
+   "A process is a running program, described by a process control block.",
+   "Context switching lets many processes share one core.",
+   "Race conditions happen when shared data is used in the wrong order.",
+   "Semaphores (Dijkstra, 1965) and mutexes prevent this.",
+   "Deadlock needs four conditions at once, including circular wait."
+  ],
+  "1rmy100": [
+   "Virtual memory gives each process a large address space.",
+   "Page tables map virtual addresses to physical ones.",
+   "A page fault loads a missing page from disk, maybe replacing the least recently used page."
+  ],
+  "llx9cm": [
+   "A file system stores data as named files in directories.",
+   "It records metadata like size and permissions.",
+   "Inodes or allocation tables locate each file's blocks."
+  ],
+  "1l019rq": [
+   "An operating system manages hardware and software and serves programs.",
+   "The kernel is its core, reached through system calls.",
+   "Processes share the CPU through context switching and need tools like semaphores to avoid race conditions.",
+   "Deadlock needs four conditions at the same time.",
+   "Virtual memory and file systems manage memory and storage."
+  ]
+ },
+ "glossary": [
+  {
+   "term": "operating system",
+   "definition": "System software that manages hardware and software and provides services to programs.",
+   "source_hash": "1yfb2py"
+  },
+  {
+   "term": "kernel",
+   "definition": "The core part of the operating system that controls the processor, memory and devices.",
+   "source_hash": "sl3qr1"
+  },
+  {
+   "term": "bootloader",
+   "definition": "The program that runs first when a computer starts and loads the kernel.",
+   "source_hash": "sl3qr1"
+  },
+  {
+   "term": "microkernel",
+   "definition": "A small kernel that moves most services into separate user-space programs.",
+   "source_hash": "bykcu5"
+  },
+  {
+   "term": "system calls",
+   "definition": "Requests an app makes to the kernel for a service.",
+   "source_hash": "wgj3sz"
+  },
+  {
+   "term": "process control block",
+   "definition": "The record the OS keeps about each process.",
+   "source_hash": "1imwytd"
+  },
+  {
+   "term": "context switching",
+   "definition": "Saving one process's state and loading another's so they can share the CPU.",
+   "source_hash": "47lg1s"
+  },
+  {
+   "term": "race condition",
+   "definition": "An error where the result depends on the order in which processes run.",
+   "source_hash": "h8qttx"
+  },
+  {
+   "term": "semaphore",
+   "definition": "A tool, introduced by Edsger Dijkstra in 1965, that helps processes take turns with shared data.",
+   "source_hash": "h8qttx"
+  },
+  {
+   "term": "deadlock",
+   "definition": "When processes wait on each other forever and none can continue.",
+   "source_hash": "3odg60"
+  },
+  {
+   "term": "Virtual memory",
+   "definition": "A technique that maps virtual addresses to physical memory and can use disk as extra memory.",
+   "source_hash": "6p7o3h"
+  },
+  {
+   "term": "page fault",
+   "definition": "The signal raised when a needed page is not in physical memory.",
+   "source_hash": "perewa"
+  },
+  {
+   "term": "inodes",
+   "definition": "Structures that store a file's details and where its blocks are.",
+   "source_hash": "llx9cm"
+  }
+ ]
+}

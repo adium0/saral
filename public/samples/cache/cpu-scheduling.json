@@ -1,0 +1,134 @@
+{
+ "simplified": {
+  "12iudwp": "These are lecture notes for Operating Systems, Unit 3. They explain how the operating system picks the next process to run on the processor.",
+  "1cjqnre": "In a multiprogramming system, many processes are in memory at once. Sometimes the running process must wait, for example for input or output. Then the CPU scheduler picks another process from the ready queue. This way, the processor is never idle.",
+  "1fjg6gb": "Each process switches between a CPU burst and an I/O burst. In a CPU burst it computes. In an I/O burst it waits. Most processes have many short CPU bursts and a few long ones.",
+  "181qxfn": "CPU utilisation means keeping the processor busy, ideally 40 to 90 percent of the time.",
+  "1s1v0zz": "Throughput is how many processes finish in a unit of time.",
+  "13lxnd": "Turnaround time is the time from when a process is submitted until it finishes.",
+  "1wi9q8x": "Waiting time is the total time a process spends waiting in the ready queue.",
+  "1ev6xnb": "Response time is the time from submission until the first response appears.",
+  "15uasy5": "FCFS is the simplest scheduling method. The process that asks first gets the CPU first. The ready queue works like a line: first in, first out. FCFS is non-preemptive. A process keeps the CPU until its burst ends.",
+  "svdtvj": "Average waiting time under FCFS is often long. Take three processes with bursts of 24, 3 and 3 milliseconds, in that order. The average wait is 17 milliseconds. If the two short ones come first, it drops to 3 milliseconds. Short processes stuck behind a long one is called the convoy effect.",
+  "lns9vt": "SJF looks at how long each process's next CPU burst will be. It gives the CPU to the shortest one. SJF is proven optimal. It gives the lowest average waiting time for a set of processes.",
+  "7d6m25": "The hard part is knowing how long the next burst will be. Schedulers guess using an exponential average of past bursts. Next estimate = alpha times the last burst plus (1 - alpha) times the previous estimate. Alpha is usually 0.5.",
+  "gtvl4b": "The preemptive version is called shortest-remaining-time-first. It stops the running process if a new one arrives with a shorter remaining burst.",
+  "1sc0ht": "Round Robin is made for time-sharing systems. Each process gets a small slice of CPU time called a time quantum. The quantum is usually 10 to 100 milliseconds. Then the process is stopped and goes to the back of the ready queue.",
+  "1mxo4e2": "Round Robin's performance depends a lot on the quantum size. A very large quantum makes it act like FCFS. A very small quantum wastes time on context switches.",
+  "z6dul1": "In priority scheduling, each process has a priority number. The CPU goes to the highest priority process. A big problem is starvation. Low-priority processes may wait forever.",
+  "1y1qpuq": "The usual fix is aging. The system slowly raises the priority of processes that have waited a long time. So every process gets to run in the end.",
+  "aap7p2": "Preemption",
+  "dc8x6o": "Context switch",
+  "18faday": "Dispatcher latency",
+  "owombk": "Convoy effect",
+  "ogg1uz": "Starvation and aging"
+ },
+ "summaries": {
+  "12iudwp": [
+   "These notes cover how the OS chooses the next process to run."
+  ],
+  "1ftss6k": [
+   "Many processes wait in memory at once.",
+   "When one waits for I/O, the scheduler runs another from the ready queue.",
+   "Processes alternate between CPU bursts and I/O bursts."
+  ],
+  "bpiemr": [
+   "Keep the CPU busy, ideally 40 to 90 percent.",
+   "Finish many processes per unit of time (throughput).",
+   "Keep turnaround, waiting and response times low."
+  ],
+  "ewvu09": [
+   "FCFS runs processes in the order they arrive.",
+   "It is non-preemptive.",
+   "Waiting time can be long: 17 ms versus 3 ms in the example.",
+   "Short jobs stuck behind long ones is the convoy effect."
+  ],
+  "1ugq2lj": [
+   "SJF runs the shortest next burst first and gives the lowest average waiting time.",
+   "Burst length is predicted with an exponential average, alpha usually 0.5.",
+   "The preemptive version is shortest-remaining-time-first."
+  ],
+  "u8q1c4": [
+   "Round Robin gives each process a time quantum of 10 to 100 ms.",
+   "A large quantum acts like FCFS.",
+   "A tiny quantum wastes time on context switches."
+  ],
+  "13h9qk8": [
+   "Priority scheduling runs the highest-priority process first.",
+   "Low-priority processes can starve.",
+   "Aging slowly raises their priority so all processes run."
+  ],
+  "1skvrr1": [
+   "Revise preemption, context switch, dispatcher latency, convoy effect, starvation and aging."
+  ],
+  "6llzma": [
+   "The CPU scheduler picks the next process when the running one waits.",
+   "Good scheduling keeps the CPU busy and keeps waiting and response times low.",
+   "FCFS is simple but suffers from the convoy effect.",
+   "SJF gives the lowest average waiting time but needs burst predictions.",
+   "Round Robin uses time quanta; priority scheduling needs aging to prevent starvation."
+  ]
+ },
+ "glossary": [
+  {
+   "term": "multiprogramming",
+   "definition": "Keeping several processes in memory at once so the CPU always has work.",
+   "source_hash": "1cjqnre"
+  },
+  {
+   "term": "ready queue",
+   "definition": "The list of processes waiting for their turn on the CPU.",
+   "source_hash": "1cjqnre"
+  },
+  {
+   "term": "CPU burst",
+   "definition": "A period when a process is computing on the processor.",
+   "source_hash": "1fjg6gb"
+  },
+  {
+   "term": "Throughput",
+   "definition": "The number of processes completed per unit of time.",
+   "source_hash": "1s1v0zz"
+  },
+  {
+   "term": "Turnaround time",
+   "definition": "The time from submitting a process until it finishes.",
+   "source_hash": "13lxnd"
+  },
+  {
+   "term": "non-preemptive",
+   "definition": "Once a process has the CPU, it keeps it until its burst ends.",
+   "source_hash": "15uasy5"
+  },
+  {
+   "term": "convoy effect",
+   "definition": "Short processes waiting behind one long process.",
+   "source_hash": "svdtvj"
+  },
+  {
+   "term": "exponential average",
+   "definition": "A way to predict the next burst from past bursts, weighted by alpha.",
+   "source_hash": "7d6m25"
+  },
+  {
+   "term": "time quantum",
+   "definition": "The small slice of CPU time each process gets in Round Robin, usually 10 to 100 ms.",
+   "source_hash": "1sc0ht"
+  },
+  {
+   "term": "context switches",
+   "definition": "Saving one process's state and loading another's.",
+   "source_hash": "1mxo4e2"
+  },
+  {
+   "term": "starvation",
+   "definition": "When a low-priority process waits forever for the CPU.",
+   "source_hash": "z6dul1"
+  },
+  {
+   "term": "aging",
+   "definition": "Slowly raising the priority of processes that have waited a long time.",
+   "source_hash": "1y1qpuq"
+  }
+ ]
+}

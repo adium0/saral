@@ -1,0 +1,138 @@
+{
+ "simplified": {
+  "1qwfaac": "A cell is the smallest unit of a living thing. Some living things have one cell, like a bacterium. Others have trillions of cells, like a human. Cells carry out all the chemical reactions needed for life.",
+  "1ot7r3g": "Most cells are too small to see with the eye alone. So studying cells needed the microscope. In 1665, Robert Hooke looked at thin slices of cork. He called the tiny boxes he saw cells. Biologists still use that word today.",
+  "1j3kmp6": "Light microscopes send light through a sample and bend it with lenses. They make things up to about 1,000 times bigger. Electron microscopes use a beam of electrons instead of light. They make things up to 1,000,000 times bigger. So they show parts inside the cell that light cannot.",
+  "1ksuwci": "The cell theory came from Matthias Schleiden, Theodor Schwann and Rudolf Virchow in the nineteenth century. It has three ideas. All living things are made of one or more cells. The cell is the basic unit of life. New cells only come from old cells dividing.",
+  "16j5eu7": "Prokaryotes include bacteria and archaea. They are living things with only one cell. They have no nucleus (a walled-off centre) and no organelles with membranes. Their DNA sits in a central area called the nucleoid.",
+  "25otde": "All prokaryotic cells have four parts. A plasma membrane separates the inside from the outside. Cytoplasm is where the cell's reactions happen. DNA carries the genetic instructions. Ribosomes make proteins.",
+  "1pp1v1e": "Most prokaryotes are 0.1 to 5.0 micrometres across. Being small matters. Things that enter the cell can spread quickly to every part (this is diffusion). Waste made inside can also spread out quickly.",
+  "jf3z3h": "When a cell grows, its volume grows faster than its surface area. For a cube with side length L, the ratio is SA:V = 6/L. So a bigger cell has less membrane for its size. It has less surface to swap materials with its surroundings.",
+  "n3qki1": "Eukaryotic cells make up animals, plants, fungi and protists. They are usually 10 to 100 micrometres across. They have a nucleus with a membrane around it. They also have many organelles (small cell parts) with membranes. These keep different jobs in separate spaces.",
+  "1f2ogni": "The plasma membrane is the thin skin around the cell. It is mostly a phospholipid bilayer (two layers of fat molecules). Proteins, cholesterol and glycolipids sit in it. It lets only some things through. It controls how ions, food and waste move in and out. This keeps conditions in the cell steady (homeostasis), which the cell needs to stay alive.",
+  "1079dnh": "The cytoplasm is everything between the plasma membrane and the nuclear envelope. It holds organelles in a jelly-like liquid called cytosol. Cytosol is about 70 to 80 percent water. It also has glucose, salts, fatty acids, amino acids and proteins.",
+  "1b36b6k": "The nucleus is usually the biggest organelle in a eukaryotic cell. It holds the cell's DNA. It directs the making of ribosomes and proteins. A double membrane called the nuclear envelope surrounds it. Nuclear pores in the envelope control what moves in and out.",
+  "1lt2csf": "Ribosomes are the cell parts that make proteins. They are made of ribosomal RNA and protein. They are about 20 to 30 nanometres across. Some float free in the cytosol. Others are attached to the endoplasmic reticulum.",
+  "1t4prz1": "Mitochondria are organelles with two membranes. They are often called the powerhouses of the cell. They carry out cellular respiration. This makes ATP (adenosine triphosphate), the cell's main energy molecule. Mitochondria also have their own DNA and ribosomes.",
+  "ws6w3q": "The endoplasmic reticulum is a network of linked sacs and tubes made of membrane. It changes proteins and makes lipids (fats). The rough endoplasmic reticulum is covered in ribosomes. The smooth endoplasmic reticulum has no ribosomes. It makes carbohydrates, lipids and steroid hormones. It also breaks down some medicines.",
+  "1di9tj7": "The Golgi apparatus is a stack of flat sacs made of membrane. It receives small bubbles (vesicles) from the endoplasmic reticulum. Then it sorts, labels, packs and sends lipids and proteins where they need to go. Some go inside the cell and some go outside.",
+  "hhm3qb": "Lysosomes are found in animal cells. They are organelles with a membrane and digestive enzymes inside. The enzymes work best at an acidic pH of about 4.5. Lysosomes break down old organelles, large molecules and swallowed germs.",
+  "1hnj0k9": "Plant cells have the same organelles as other eukaryotic cells, plus more. They have a stiff cell wall made mostly of cellulose. Cellulose is a carbohydrate made of glucose units. The wall supports and protects the cell and gives it its shape.",
+  "1jasn42": "Chloroplasts are plant organelles that carry out photosynthesis. Photosynthesis uses carbon dioxide, water and light energy. It makes glucose and oxygen. Like mitochondria, chloroplasts have their own DNA and ribosomes. This supports the endosymbiotic theory of where they came from.",
+  "kii9xi": "The central vacuole can fill up to 90 percent of a grown plant cell. It stores water and dissolved substances. It helps control how much water is in the cell. When the vacuole loses water, the plant wilts."
+ },
+ "summaries": {
+  "69nl8z": [
+   "Cells are the smallest units of life and carry out its chemical reactions.",
+   "Robert Hooke named cells in 1665 after looking at cork.",
+   "Light microscopes magnify about 1,000 times; electron microscopes up to 1,000,000 times.",
+   "Cell theory: all living things are made of cells.",
+   "New cells come only from existing cells dividing."
+  ],
+  "acotpf": [
+   "Prokaryotes (bacteria and archaea) have no nucleus or membrane-bound organelles.",
+   "Their DNA sits in the nucleoid.",
+   "All have a plasma membrane, cytoplasm, DNA and ribosomes.",
+   "Most are 0.1 to 5.0 micrometres across, so materials spread quickly.",
+   "Bigger cells have less surface for their volume: SA:V = 6/L."
+  ],
+  "fc1e9s": [
+   "Eukaryotic cells are 10 to 100 micrometres and have a nucleus and organelles.",
+   "The plasma membrane controls what enters and leaves the cell.",
+   "The nucleus holds DNA; ribosomes make proteins.",
+   "Mitochondria make ATP; the ER and Golgi apparatus make, change and ship proteins and lipids.",
+   "Lysosomes digest old parts and germs at a pH of about 4.5."
+  ],
+  "1od8dgr": [
+   "Plant cells have a cellulose cell wall for support and shape.",
+   "Chloroplasts carry out photosynthesis to make glucose and oxygen.",
+   "Chloroplasts have their own DNA and ribosomes.",
+   "The central vacuole can fill 90 percent of the cell and stores water.",
+   "When the vacuole loses water, the plant wilts."
+  ],
+  "1i0gg1c": [
+   "Cells are the basic units of all living things, first named by Robert Hooke in 1665.",
+   "Prokaryotes like bacteria have no nucleus; their DNA sits in the nucleoid.",
+   "Eukaryotic cells have a nucleus and organelles such as mitochondria, ribosomes and the Golgi apparatus.",
+   "The plasma membrane controls what moves in and out of the cell.",
+   "Plant cells also have a cell wall, chloroplasts and a large central vacuole."
+  ]
+ },
+ "glossary": [
+  {
+   "term": "Prokaryotes",
+   "definition": "Single-celled living things, like bacteria and archaea, with no nucleus.",
+   "source_hash": "16j5eu7"
+  },
+  {
+   "term": "nucleoid",
+   "definition": "The central area of a prokaryotic cell where its DNA is found.",
+   "source_hash": "16j5eu7"
+  },
+  {
+   "term": "ribosomes",
+   "definition": "Small cell parts made of RNA and protein that build proteins.",
+   "source_hash": "1lt2csf"
+  },
+  {
+   "term": "plasma membrane",
+   "definition": "The thin, selectively permeable layer around a cell that controls what enters and leaves.",
+   "source_hash": "1f2ogni"
+  },
+  {
+   "term": "phospholipid bilayer",
+   "definition": "Two layers of fat molecules that form the main structure of the plasma membrane.",
+   "source_hash": "1f2ogni"
+  },
+  {
+   "term": "homeostatic",
+   "definition": "Keeping conditions inside the cell steady.",
+   "source_hash": "1f2ogni"
+  },
+  {
+   "term": "cytosol",
+   "definition": "The jelly-like liquid in the cytoplasm, about 70 to 80 percent water.",
+   "source_hash": "1079dnh"
+  },
+  {
+   "term": "nuclear envelope",
+   "definition": "The double membrane around the nucleus, with pores that control traffic.",
+   "source_hash": "1b36b6k"
+  },
+  {
+   "term": "Mitochondria",
+   "definition": "Double-membraned organelles that carry out cellular respiration to make ATP.",
+   "source_hash": "1t4prz1"
+  },
+  {
+   "term": "adenosine triphosphate",
+   "definition": "ATP, the main energy-carrying molecule of the cell.",
+   "source_hash": "1t4prz1"
+  },
+  {
+   "term": "endoplasmic reticulum",
+   "definition": "A network of membrane sacs and tubes that changes proteins and makes lipids.",
+   "source_hash": "ws6w3q"
+  },
+  {
+   "term": "Golgi apparatus",
+   "definition": "Stacked membrane sacs that sort, tag, pack and send out lipids and proteins.",
+   "source_hash": "1di9tj7"
+  },
+  {
+   "term": "Lysosomes",
+   "definition": "Organelles in animal cells with digestive enzymes that break down old parts and germs.",
+   "source_hash": "hhm3qb"
+  },
+  {
+   "term": "cellulose",
+   "definition": "A carbohydrate made of glucose units that forms the plant cell wall.",
+   "source_hash": "1hnj0k9"
+  },
+  {
+   "term": "photosynthesis",
+   "definition": "Reactions that use carbon dioxide, water and light to make glucose and oxygen.",
+   "source_hash": "1jasn42"
+  }
+ ]
+}

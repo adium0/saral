@@ -1,0 +1,296 @@
+@import 'tailwindcss';
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/atkinson-hyperlegible/700.css';
+@import '@fontsource/atkinson-hyperlegible/400-italic.css';
+@import '@fontsource-variable/lexend';
+@import '@fontsource/opendyslexic/400.css';
+@import '@fontsource/opendyslexic/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* Design tokens. Every theme keeps text at 4.5:1 or better and controls at 3:1 or better. */
+:root,
+[data-theme='light'] {
+  --bg: #fbfaf7;
+  --surface: #f1eee8;
+  --surface-2: #e7e3da;
+  --ink: #141414;
+  --muted: #4d4a45;
+  --line: #8a857c;
+  --line-soft: #d9d4ca;
+  --accent: #ff5949;
+  --accent-ink: #b42d1c;
+  --on-accent: #141414;
+  --focus: #1f4fd1;
+  --hl-sentence: #fff0b8;
+  --hl-word: #ffc933;
+  --hl-word-ink: #141414;
+  --hl-link: #dce8ff;
+  --term-line: #b42d1c;
+  --dim: rgba(251, 250, 247, 0.82);
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg: #121212;
+  --surface: #1d1d1d;
+  --surface-2: #2a2a2a;
+  --ink: #ededed;
+  --muted: #b8b4ad;
+  --line: #8f8a82;
+  --line-soft: #343434;
+  --accent: #ff6b5b;
+  --accent-ink: #ff9488;
+  --on-accent: #141414;
+  --focus: #8db3ff;
+  --hl-sentence: #3b3420;
+  --hl-word: #ffc933;
+  --hl-word-ink: #141414;
+  --hl-link: #1f3157;
+  --term-line: #ff9488;
+  --dim: rgba(18, 18, 18, 0.8);
+  color-scheme: dark;
+}
+
+[data-theme='cream'] {
+  --bg: #fbf3df;
+  --surface: #f3e7c8;
+  --surface-2: #eadbb3;
+  --ink: #2a2017;
+  --muted: #5a4a38;
+  --line: #8f7b60;
+  --line-soft: #e2d3ad;
+  --accent: #e8553f;
+  --accent-ink: #9e2f1b;
+  --on-accent: #2a2017;
+  --focus: #1f4fd1;
+  --hl-sentence: #fde69a;
+  --hl-word: #f5b700;
+  --hl-word-ink: #2a2017;
+  --hl-link: #e3e9ff;
+  --term-line: #9e2f1b;
+  --dim: rgba(251, 243, 223, 0.82);
+  color-scheme: light;
+}
+
+[data-theme='contrast'] {
+  --bg: #000000;
+  --surface: #000000;
+  --surface-2: #1a1a00;
+  --ink: #ffff00;
+  --muted: #ffff00;
+  --line: #ffff00;
+  --line-soft: #ffff00;
+  --accent: #ffff00;
+  --accent-ink: #ffff00;
+  --on-accent: #000000;
+  --focus: #00ffff;
+  --hl-sentence: #333300;
+  --hl-word: #ffffff;
+  --hl-word-ink: #000000;
+  --hl-link: #003333;
+  --term-line: #00ffff;
+  --dim: rgba(0, 0, 0, 0.85);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-on-accent: var(--on-accent);
+  --color-focus: var(--focus);
+  --font-display: 'Lexend Variable', 'Lexend', system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100dvh;
+}
+
+/* Visible focus outline at 3:1 or better in every theme. */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Small uppercase "spec sheet" labels from the design inspiration. */
+.spec {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Reader text. Display settings arrive as CSS variables from the settings store. */
+.reader-text {
+  font-family: var(--r-font);
+  font-size: var(--r-size);
+  line-height: var(--r-lh);
+  letter-spacing: var(--r-ls);
+  word-spacing: var(--r-ws);
+  max-width: var(--r-measure);
+  overflow-wrap: anywhere;
+}
+.reader-text p,
+.reader-text li {
+  margin: 0 0 calc(var(--r-size) * 0.9);
+}
+.reader-text h2 {
+  font-size: calc(var(--r-size) * 1.35);
+  line-height: 1.3;
+  font-weight: 700;
+  margin: calc(var(--r-size) * 1.6) 0 calc(var(--r-size) * 0.6);
+}
+.reader-text h3 {
+  font-size: calc(var(--r-size) * 1.15);
+  font-weight: 700;
+  margin: calc(var(--r-size) * 1.2) 0 calc(var(--r-size) * 0.5);
+}
+
+.sen {
+  border-radius: 0.2em;
+  cursor: pointer;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.sen:hover {
+  background: color-mix(in srgb, var(--hl-sentence) 55%, transparent);
+}
+.sen.is-current {
+  background: var(--hl-sentence);
+  outline: 2px solid color-mix(in srgb, var(--accent) 60%, transparent);
+  outline-offset: 1px;
+}
+.word-current {
+  background: var(--hl-word);
+  color: var(--hl-word-ink);
+  border-radius: 0.15em;
+}
+.para-linked {
+  background: var(--hl-link);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 0.4rem var(--hl-link);
+}
+
+.term {
+  text-decoration: underline dotted var(--term-line);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  cursor: help;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/* Range sliders that are easy to grab (44 px target height). */
+input[type='range'] {
+  accent-color: var(--accent-ink);
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+}
+[data-theme='contrast'] input[type='range'] {
+  accent-color: #ffff00;
+}
+
+/* Marquee */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+.marquee-paused .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Calm mode and the OS reduced-motion setting both turn decorative motion off. */
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-motion='full']) *,
+  html:not([data-motion='full']) *::before,
+  html:not([data-motion='full']) *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html[data-motion='calm'] *,
+html[data-motion='calm'] *::before,
+html[data-motion='calm'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
